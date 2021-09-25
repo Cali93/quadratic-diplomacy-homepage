@@ -6,10 +6,13 @@ import Button from "./components/button";
 import fonts from "./fonts";
 
 const customTheme = extendTheme({
+  config: {
+    initialColorMode: "dark",
+  },
   styles: {
     global: (props: any) => ({
       body: {
-        color: mode("brand.900", "violet.100")(props),
+        color: mode("brand.900", "violet.500")(props),
         bg: mode("violet.50", "brand.500")(props),
       },
     }),

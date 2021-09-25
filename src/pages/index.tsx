@@ -5,14 +5,13 @@ import {
   VStack,
   HStack,
   Divider,
-  Icon,
   Button,
 } from "@chakra-ui/react";
 import { useColorModeValue } from "@chakra-ui/color-mode";
-import { FiCircle } from "react-icons/fi";
+import { SimpleGrid } from "@chakra-ui/layout";
 
-import qdSvg from "../components/Icons/qd.svg";
 import QDIcon from "../components/Icons/qd-icon";
+import Circle from "../components/Circles/Circle";
 
 const Home = () => {
   const headingColor = useColorModeValue("yellow.600", "yellow.500");
@@ -28,10 +27,10 @@ const Home = () => {
             {" "}
             by MOONSHOT COLLECTIVE{" "}
           </Text>
-          <Text>
+          <Text pt="10" fontSize="20px">
             Distribute tokens among your team members based on quadratic voting.{" "}
           </Text>
-          <Box maxW="300px">
+          <Box maxW="300px" pt="10">
             <Button w="239px" h="51px" fontSize="xl">
               Launch App
             </Button>
@@ -39,29 +38,45 @@ const Home = () => {
         </VStack>
         <Box w="300px"></Box>
       </HStack>
-      <Divider mt="8" />
-      <VStack mt="8" spacing="4" align="left">
+
+      <Divider mt="16" />
+
+      <VStack mt="16" spacing="4" align="left">
         <Heading size="md" color={headingColor}>
           How it Works
         </Heading>
-        <HStack>
-          <Box m="2">
-            <FiCircle />
+        <SimpleGrid
+          columns={{
+            sm: 1,
+            md: 3,
+          }}
+          spacing={4}
+        >
+          <HStack>
+            <Box>
+              <Circle text="1" />
+            </Box>
             <Text>Select team members you’ve worked with </Text>
-          </Box>
-          <Box m="2">
-            <FiCircle />
-            <Text>Select team members you’ve worked with </Text>
-          </Box>
-          <Box m="2">
-            <FiCircle />
-            <Text>Select team members you’ve worked with </Text>
-          </Box>
-        </HStack>
-      </VStack>
-      <Divider mt="8" />
+          </HStack>
 
-      <VStack mt="8" spacing="4" align="left">
+          <HStack>
+            <Box>
+              <Circle text="2" />
+            </Box>
+            <Text>Select team members you’ve worked with </Text>
+          </HStack>
+
+          <HStack>
+            <Box>
+              <Circle text="3" />
+            </Box>
+            <Text>Select team members you’ve worked with </Text>
+          </HStack>
+        </SimpleGrid>
+      </VStack>
+      <Divider mt="16" />
+
+      <VStack mt="16" spacing="4" align="left">
         <Heading size="md" color={headingColor}>
           FAQs
         </Heading>
@@ -75,6 +90,7 @@ const Home = () => {
           aliquip ex ea{" "}
         </Text>
       </VStack>
+      <Divider mt="16" />
     </Box>
   );
 };

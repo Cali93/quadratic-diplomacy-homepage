@@ -5,16 +5,17 @@ const defaultSEOConfig = {
   defaultTitle: "quadratic-diplomacy",
   description:
     "Distribute tokens among your team members based on quadratic voting.",
-  canonical: "https://quadratic-diplomacy.sznm.dev",
+  canonical: "https://quadratic-diplomacy.com",
   openGraph: {
-    url: "https://quadratic-diplomacy.sznm.dev",
+    url: "https://quadratic-diplomacy.com",
     title: "quadratic-diplomacy",
     description:
       "Distribute tokens among your team members based on quadratic voting.",
+    //TODO: replace with qd image
     images: [
       {
-        url: "https://og-image.sznm.dev/**quadratic-diplomacy**.sznm.dev.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fsznm.dev%2Favataaars.svg&widths=250",
-        alt: "quadratic-diplomacy.sznm.dev og-image",
+        url: "",
+        alt: "quadratic-diplomacy.com og-image",
       },
     ],
     site_name: "quadratic-diplomacy",
