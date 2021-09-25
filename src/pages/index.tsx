@@ -10,7 +10,7 @@ import {
 import { useColorModeValue } from "@chakra-ui/color-mode";
 import { SimpleGrid } from "@chakra-ui/layout";
 
-import QDIcon from "../components/Icons/qd-icon";
+import QDIcon from "../components/Icons/QDIcon";
 import Circle from "../components/Circles/Circle";
 
 const Home = () => {
@@ -39,7 +39,7 @@ const Home = () => {
         <Box w="300px"></Box>
       </HStack>
 
-      <Divider mt="16" />
+      <Divider mt="16" backgroundColor="purple.500" />
 
       <VStack mt="16" spacing="4" align="left">
         <Heading size="md" color={headingColor}>
@@ -56,25 +56,25 @@ const Home = () => {
             <Box>
               <Circle text="1" />
             </Box>
-            <Text>Select team members you’ve worked with </Text>
+            <Text>Select team members you’ve worked with</Text>
           </HStack>
 
           <HStack>
             <Box>
               <Circle text="2" />
             </Box>
-            <Text>Select team members you’ve worked with </Text>
+            <Text>Vote each member with your allocated number of votes</Text>
           </HStack>
 
           <HStack>
             <Box>
               <Circle text="3" />
             </Box>
-            <Text>Select team members you’ve worked with </Text>
+            <Text>Tokens will be distributed based on quadratic voting</Text>
           </HStack>
         </SimpleGrid>
       </VStack>
-      <Divider mt="16" />
+      <Divider mt="16" backgroundColor="purple.500" />
 
       <VStack mt="16" spacing="4" align="left">
         <Heading size="md" color={headingColor}>
@@ -90,7 +90,7 @@ const Home = () => {
           aliquip ex ea{" "}
         </Text>
       </VStack>
-      <Divider mt="16" />
+      <Divider mt="16" backgroundColor="purple.500" />
     </Box>
   );
 };

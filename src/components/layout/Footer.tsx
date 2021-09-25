@@ -9,11 +9,11 @@ import {
 import { Icon } from "@chakra-ui/icon";
 import { FaGithub } from "react-icons/fa";
 
-import GitcoinIcon from "../Icons/gitcoin-icon";
+import GitcoinIcon from "../Icons/GitcoinIcon";
 
 const Footer = () => {
   return (
-    <Flex as="footer" width="full" align="center" pt="8" pb="12">
+    <Box as="footer" width="full" alignContent="center" pt="8" pb="12">
       <HStack alignItems="center" justifyContent="space-between" width="full">
         <Flex alignItems="center" justifyContent="center">
           <GitcoinIcon />
@@ -35,7 +35,7 @@ const Footer = () => {
           />
         </Link>
       </HStack>
-    </Flex>
+    </Box>
   );
 };
 
