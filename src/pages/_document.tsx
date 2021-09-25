@@ -16,9 +16,9 @@ import * as React from "react";
 
 import createEmotionCache from "styles/createEmotionCache";
 
-const APP_NAME = "nextchakra-starter";
+const APP_NAME = "quadratic-diplomacy";
 const APP_DESCRIPTION =
-  "Next.js app template with Chakra-UI, TypeScript, and PWA configured";
+  "Distribute tokens among your team members based on quadratic voting.";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {

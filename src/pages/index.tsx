@@ -1,32 +1,47 @@
 import {
   Box,
   Text,
-  Button,
   Heading,
   VStack,
   HStack,
   Divider,
+  Icon,
+  Button,
 } from "@chakra-ui/react";
-import BasicButton from "../components/Button/BasicButton";
+import { useColorModeValue } from "@chakra-ui/color-mode";
 import { FiCircle } from "react-icons/fi";
 
+import qdSvg from "../components/Icons/qd.svg";
+import QDIcon from "../components/Icons/qd-icon";
+
 const Home = () => {
+  const headingColor = useColorModeValue("yellow.600", "yellow.500");
   return (
     <Box mb={8} w="full">
       <HStack>
         <VStack align="left">
-          <Heading color="yellow.100">Quadratic Diplomacy</Heading>
-          <Text color="violet.100"> by MOONSHOT COLLECTIVE </Text>
+          <HStack align="center">
+            <Heading color={headingColor}>Quadratic Diplomacy</Heading>
+            <QDIcon />
+          </HStack>
+          <Text color="purple.500" fontWeight="bold">
+            {" "}
+            by MOONSHOT COLLECTIVE{" "}
+          </Text>
           <Text>
             Distribute tokens among your team members based on quadratic voting.{" "}
           </Text>
-          <BasicButton text="Launch App" />
+          <Box maxW="300px">
+            <Button w="239px" h="51px" fontSize="xl">
+              Launch App
+            </Button>
+          </Box>
         </VStack>
-        <Box w="350px"></Box>
+        <Box w="300px"></Box>
       </HStack>
       <Divider mt="8" />
-      <VStack mt="8" spacing="4">
-        <Heading size="md" color="yellow.100">
+      <VStack mt="8" spacing="4" align="left">
+        <Heading size="md" color={headingColor}>
           How it Works
         </Heading>
         <HStack>
@@ -46,11 +61,13 @@ const Home = () => {
       </VStack>
       <Divider mt="8" />
 
-      <VStack align="left" p="4">
-        <Heading size="md" color="yellow.100">
+      <VStack mt="8" spacing="4" align="left">
+        <Heading size="md" color={headingColor}>
           FAQs
         </Heading>
-        <Text color="violet.100">Lorem ipsum dolor sit amet?</Text>
+        <Text color="purple.500" fontWeight="bold">
+          Lorem ipsum dolor sit amet?
+        </Text>
         <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

@@ -1,4 +1,5 @@
 import { extendTheme } from "@chakra-ui/react";
+import { mode } from "@chakra-ui/theme-tools";
 
 import colors from "./colors";
 import Button from "./components/button";
@@ -6,13 +7,12 @@ import fonts from "./fonts";
 
 const customTheme = extendTheme({
   styles: {
-    global: {
+    global: (props: any) => ({
       body: {
-        fontFamily: "Space Mono",
-        backgroundColor: "#0b0228",
-        color: "#c9b8ff"
+        color: mode("brand.900", "violet.100")(props),
+        bg: mode("violet.50", "brand.500")(props),
       },
-    },
+    }),
   },
   fonts,
   colors,

@@ -5,14 +5,14 @@ import { CacheProvider } from "@emotion/react";
 import { DefaultSeo } from "next-seo";
 import { AppProps } from "next/app";
 import Head from "next/head";
-import "@fontsource/space-mono"
+import "@fontsource/space-mono";
+import "@fontsource/poppins";
 
 import defaultSEOConfig from "../../next-seo.config";
 import Layout from "components/layout";
 import createEmotionCache from "styles/createEmotionCache";
 import customTheme from "styles/customTheme";
 import "styles/globals.css";
-
 const clientSideEmotionCache = createEmotionCache();
 
 interface MyAppProps extends AppProps {

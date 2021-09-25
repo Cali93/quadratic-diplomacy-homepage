@@ -1,24 +1,26 @@
 /** @type {import('next-seo').DefaultSeoProps} */
 const defaultSEOConfig = {
-  title: "nextchakra-starter",
-  titleTemplate: "%s | nextchakra-starter",
-  defaultTitle: "nextchakra-starter",
-  description: "Next.js + chakra-ui + TypeScript template",
-  canonical: "https://nextchakra-starter.sznm.dev",
+  title: "quadratic-diplomacy",
+  titleTemplate: "%s | quadratic-diplomacy",
+  defaultTitle: "quadratic-diplomacy",
+  description:
+    "Distribute tokens among your team members based on quadratic voting.",
+  canonical: "https://quadratic-diplomacy.sznm.dev",
   openGraph: {
-    url: "https://nextchakra-starter.sznm.dev",
-    title: "nextchakra-starter",
-    description: "Next.js + chakra-ui + TypeScript template",
+    url: "https://quadratic-diplomacy.sznm.dev",
+    title: "quadratic-diplomacy",
+    description:
+      "Distribute tokens among your team members based on quadratic voting.",
     images: [
       {
-        url: "https://og-image.sznm.dev/**nextchakra-starter**.sznm.dev.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fsznm.dev%2Favataaars.svg&widths=250",
-        alt: "nextchakra-starter.sznm.dev og-image",
+        url: "https://og-image.sznm.dev/**quadratic-diplomacy**.sznm.dev.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fsznm.dev%2Favataaars.svg&widths=250",
+        alt: "quadratic-diplomacy.sznm.dev og-image",
       },
     ],
-    site_name: "nextchakra-starter",
+    site_name: "quadratic-diplomacy",
   },
   twitter: {
-    handle: "@sozonome",
+    handle: "@moonshotcollect",
     cardType: "summary_large_image",
   },
 };
